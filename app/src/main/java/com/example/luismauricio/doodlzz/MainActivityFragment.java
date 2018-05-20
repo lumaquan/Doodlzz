@@ -1,16 +1,20 @@
 package com.example.luismauricio.doodlzz;
 
 import android.annotation.SuppressLint;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class MainActivityFragment extends Fragment {
+public class MainActivityFragment extends LifecycleFragment {
+
+    String name = getClass().getSimpleName();
 
     public MainActivityFragment() {
     }
@@ -19,7 +23,7 @@ public class MainActivityFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        hasOptionsMenu();
+        setHasOptionsMenu(true);
     }
 
     @Override
@@ -33,4 +37,6 @@ public class MainActivityFragment extends Fragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.doodle_fragment_menu, menu);
     }
+
+
 }

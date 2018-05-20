@@ -20,4 +20,8 @@
     <string name="permission_explanation">To save an image, the app requires permission to write to external storage</string>
     <string name="title_color_dialog">Choose Color</string>
     <string name="title_line_width_dialog">Choose Line Width</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_blue">Blue</string>
 </resources>
