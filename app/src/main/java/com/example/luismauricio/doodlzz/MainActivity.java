@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends LifecycleActivity {
 
@@ -16,10 +17,12 @@ public class MainActivity extends LifecycleActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.just_another);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
     }
 
+    public void onOn(View view) {
+        Toast.makeText(this, "Second version UP", Toast.LENGTH_SHORT).show();
+    }
 }
