@@ -1,4 +1,6 @@
 package com.example.luismauricio.doodlzz;
 
-public class ColorDialogFragment {
+import android.support.v4.app.Fragment;
+
+public class ColorDialogFragment extends Fragment{
 }
